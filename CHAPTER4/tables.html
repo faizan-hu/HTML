@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - HTML</title>
+    <style> 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Table */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+thead {
+    background-color: red;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    font-size: 18px;
+    text-align: left;
+    
+}
+
+/* Table Data */
+td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+     
+     
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background-color: #ffe5e5;
+}
+
+/* Alternate Rows */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Tables in HTML</h1>
+
+    <table >
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Faizan</td>
+                <td>Software Developer</td>
+                <td>$800000</td>
+            </tr>
+
+            <tr>
+                <td>Rohan</td>
+                <td>AI Engineer</td>
+                <td>$34566</td>
+            </tr>
+
+            <tr>
+                <td>Hamza</td>
+                <td>Software Worker</td>
+                <td>$2154326</td>
+            </tr>
+
+            <tr>
+                <td>Kajol</td>
+                <td>ML Engineer</td>
+                <td>$743725647385697</td>
+            </tr>
+            <tr>
+                 <td>THANK</td>
+                 <td colspan="2">YOU</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

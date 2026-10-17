@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 25px;
+        }
+
+        form {
+            background: white;
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        label {
+            display: inline-block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #4f46e5;
+            box-shadow: 0 0 5px rgba(79, 70, 229, 0.25);
+        }
+
+        select {
+            background: white;
+            cursor: pointer;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]+label {
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+
+        input[type="checkbox"]+label {
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 13px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #3730a3;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name">
+        <br>
+
+        <!-- Phone -->
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter Phone">
+        <br>
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
+        <br>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Password">
+        <br>
+
+        <!-- Date -->
+        <label for="date">Date of Birth</label>
+        <input type="date" id="date">
+        <br>
+
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <br><br>
+
+        <!-- Subscription -->
+        <label>Subscription Plan</label>
+        <br>
+
+        <input type="radio" id="basic" name="subscription">
+        <label for="basic">Basic</label>
+
+        <input type="radio" id="premium" name="subscription">
+        <label for="premium">Premium</label>
+
+        <input type="radio" id="vip" name="subscription">
+        <label for="vip">VIP</label>
+
+        <br>
+
+        <!-- Terms -->
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <br>
+
+        <!-- Comments -->
+        <label for="comments">Comments</label>
+        <br>
+        <textarea id="comments" rows="4" cols="25" placeholder="Enter your comments"></textarea>
+
+        <br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
